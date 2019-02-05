@@ -2,11 +2,6 @@
   text-align: center;
 }
 
-.App-logo {
-  animation: App-logo-spin infinite 20s linear;
-  height: 40vmin;
-}
-
 .App-header {
   background-color: #282c34;
   min-height: 100vh;
@@ -22,6 +17,202 @@
   color: #61dafb;
 }
 
+.Auth {
+  width: 100vw;
+  height: 100vh;
+  background-image: -webkit-linear-gradient(
+    351deg,
+    #ff70a6,
+    #ff9770 40%,
+    #ffd670 73%,
+    #e9ff70
+  );
+  background-image: -o-linear-gradient(
+    351deg,
+    #ff70a6,
+    #ff9770 40%,
+    #ffd670 73%,
+    #e9ff70
+  );
+  background-image: linear-gradient(
+    99deg,
+    #ff70a6,
+    #ff9770 40%,
+    #ffd670 73%,
+    #e9ff70
+  );
+  position: absolute;
+  top: 0;
+  left: 0;
+  -ms-flex-pack: center;
+  justify-content: center;
+  color: #fff;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.auth_container {
+  margin: auto;
+  border-radius: 8px;
+  -webkit-box-shadow: 0 14px 28px 0 rgba(0, 0, 0, 0.25),
+    0 10px 10px 0 rgba(0, 0, 0, 0.26);
+  box-shadow: 0 14px 28px 0 rgba(0, 0, 0, 0.25),
+    0 10px 10px 0 rgba(0, 0, 0, 0.26);
+  background-image: -webkit-linear-gradient(353deg, #ff7a6e, #ffd670);
+  background-image: -o-linear-gradient(353deg, #ff7a6e, #ffd670);
+  background-image: linear-gradient(97deg, #ff7a6e, #ffd670);
+  width: 35vw;
+  height: 55vh;
+  display: flex;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -ms-flex-pack: distribute;
+  justify-content: flex-end;
+  /* padding: 20px; */
+  /* justify-content: center; */
+  align-items: center;
+}
+.auth_container * {
+  text-shadow: 1px 2px 30px #ddd;
+}
+.auth_container label {
+  text-align: left;
+  margin: 0 0 0 50px;
+}
+.auth_container label input {
+  color: #444;
+  background: rgba(100, 100, 100, 0.2);
+  border: 0px;
+  border-radius: 5px;
+  width: 160px;
+  padding: 3px;
+  margin: -15px 60px 0 60px;
+  display: flex;
+  justify-content: right;
+}
+#butts {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+.auth_container button {
+  margin: 15px;
+  border-width: 0px;
+  border-radius: 10px;
+  background-color: rgba(100, 100, 100, 0.2);
+  color: #ffffff;
+  height: 35px;
+  width: 80px;
+}
+#title {
+  margin: 0px;
+  font-size: 64pt;
+  font-weight: 800;
+}
+
+.Nav {
+  width: 100px;
+  height: 100vh;
+  position: fixed;
+  top: 0;
+  left: 0;
+  padding-top: 20px;
+  color: #fff;
+  background-image: -webkit-gradient(
+    linear,
+    left bottom,
+    left top,
+    from(#ff7abe),
+    to(#ff9770)
+  );
+  background-image: -webkit-linear-gradient(bottom, #ff7abe, #ff9770);
+  background-image: -o-linear-gradient(bottom, #ff7abe, #ff9770);
+  background-image: linear-gradient(0deg, #ff7abe, #ff9770);
+  -webkit-box-shadow: 10px 0 20px 0 rgba(0, 0, 0, 0.1),
+    5px 0 5px rgba(0, 0, 0, 0.2);
+  box-shadow: 10px 0 20px 0 rgba(0, 0, 0, 0.1), 5px 0 5px rgba(0, 0, 0, 0.2);
+  color: #dddddd;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  /* height: 64px;
+  width: 100vw; */
+}
+.Nav button {
+  padding: 10px;
+  height: 40px;
+  width: 40px;
+  border-width: 0px;
+  background-color: rgba(100, 100, 100, 0);
+  border-radius: 10px;
+  margin: 30px;
+  background-size: 100% auto;
+  background-repeat: no-repeat;
+  background-position: center center;
+}
+.Nav #home-button {
+  background-image: url("./assets/home_logo.png");
+}
+.Nav #post-button {
+  margin: 10px 28px 10px 32px;
+  background-image: url("./assets/new_logo.png");
+}
+
+/* .User * {
+  margin: 0 0 12px -3px;
+  height: 100px;
+  width: auto;
+} */
+.User {
+  height: 110px;
+  text-align: center;
+  color: #fff;
+  text-shadow: 1px 1px 4px #ddd;
+  /* font-weight: 800; */
+  margin: 0 auto;
+}
+#profileFrame {
+  width: 70px;
+  height: 70px;
+  margin: 5px 0 10px 0;
+  /* position: absolute; */
+
+  /* background-image: ; */
+  background-position: 50% 50%;
+  background-size: cover;
+  border: 1px solid #ddd;
+  border-radius: 50%;
+  -webkit-box-shadow: 0 0 20px #ddd;
+  box-shadow: 0 0 20px #ddd;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+#logout {
+  margin: auto 0 10px 0;
+  /* text-align: center; */
+}
+#logout button {
+  color: white;
+  font-weight: 800;
+  margin: 30px 0;
+  /* padding: 10px; */
+  height: 40px;
+  width: 40px;
+  background-image: url("./assets/shut_down.png");
+}
+
+#profileImg {
+  border-radius: 50% 50%;
+  /* padding: 0 0 0 0; */
+  /* margin: 5px 0 5px 2px; */
+  height: 70px;
+  width: 70px;
+}
+
 @keyframes App-logo-spin {
   from {
     transform: rotate(0deg);
@@ -30,3 +221,7 @@
     transform: rotate(360deg);
   }
 }
+
+/* * {
+  border: 1px solid red;
+} */
